@@ -1,0 +1,102 @@
+Emacs Lisp Legend
+=================
+
+A guide to both Emacs and Emacs Lisp
+------------------------------------
+
+Source: Emacs Tutorial
+
+I) Control Chords
+~~~~~~~~~~~~~~~~~
+
+C-a                  = Move cursor to beginning of line
+C-b                  = Move cursor backwards
+C-d                  = Delete the next character after the cursor
+C-e                  = Move cursor to end of line 
+C-f                  = Move cursor forwards
+C-g                  = Quit a partially entered command
+C-h a                = Command Apropos (Search Help by Keyword)
+C-h c $COMMAND       = Get help on $COMMAND
+C-h f                = Describes a function.
+C-h i                = Read Included Manuals
+C-h k $COMMAND       = Loads documentation regarding $COMMAND
+C-h m                = View documentation on your current major mode
+C-h p $COMMAND       = Provides definition of $COMMAND
+C-h t                = Starts the Emacs Tutorial
+C-h ?                = General Help
+C-k					 = (With cursor at the beginning of a line) Kills the entire line.
+C-l                  = Clear screen and redisplay all the text
+C-n                  = Move cursor down
+C-p                  = Move cursor up
+C-r                  = Start reverse search
+C-s $WORD            = Start incremental search (Type C-s again after entering $WORD to search for next occurrence
+C-u                  = Prepare for Numeric Argument (ex. C-u 8 C-v scrolls by 8 lines)
+C-v                  = View Next Screen/Scroll Down
+C-x 1                = Kill all other windows
+C-x 2                = Create another frame below
+C-x 3                = Create another frame to the right
+C-x 5 0              = Remove the selected window
+C-x 5 2              = Start a new window on your screen.
+C-x b $FILE <Return> = Return to $FILE from another buffer
+C-x f                = Set Margin
+C-x k, then <Return> = Stop the Tutorial
+C-x o                = Move cursor to another window
+C-x s                = Save some buffers
+C-x b $BUFFER        = Check $BUFFER
+C-x C-b              = List Buffers
+C-x C-c              = End Emacs Session
+C-x C-f              = Find a file (Can also create the file as well.)
+C-x C-s              = Save
+C-x C-w              = Save as
+C-y                  = Yank the text back
+C-z                  = Suspend Emacs
+C-<SPC> C-w          = Select an area of text with C-<SPC>, then move the cursor to one end, and use C-w to delete.
+C-/                  = Undo
+
+C-M-v                = Move to another window
+
+
+
+
+II) Meta Chords
+~~~~~~~~~~~~~~~
+
+M-a                  = Move cursor to beginning of sentence
+M-b                  = Move cursor backwards one word
+M-e                  = Move cursor to end of sentence
+M-f                  = Move cursor forward one word
+M-v                  = View Previous Screen/Scroll Up
+M-y                  = Go through yank history
+
+II.a) Meta EXtended Chords (M-x *)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+M-x recover-this-file <RETURN> = Recover the file that was being edited before crash.
+M-x repl s<Return>$OLDWORD<Return>$NEWWORD<RETURN> = Replace string
+
+II.b) List of Meta EXtended Modes (M-x *-mode)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+M-x auto-fill-mode   = Toggles Auto Fill Mode (Min., auto-adds line breaks when inserted line of text is too wide.)
+M-x c-mode           = Switches to C Mode (Maj.)
+M-x emacs-list-mode  = Switches to Emacs Lisp Mode (Maj.)
+M-x fundamental-mode = Switches to Fundamental Mode (Maj.)
+M-x java-mode        = Switches to Java Mode (Maj.)
+M-x html-mode        = Switches to HTML Mode (Maj.)
+M-x lisp-mode        = Switches to Lisp Mode (Maj.)
+M-x sh-mode          = Switches to Shell Mode (Maj.)
+M-x text-mode        = Switches to Text Mode (Maj.)
+
+II.c) Shortcuts for Programming Language Modes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+M-x ev-b             = Evaluates the buffer live in Emacs
+
+M-x e-li-mo          = emacs-lisp-mode
+M-x py-mo            = python-mode
+
+III) Emergency Commands
+~~~~~~~~~~~~~~~~~~~~~~~
+
+<ESC> <ESC> <ESC>    = Universal "Get Out" Command; used for eliminating extra windows and getting out of the minibuffer.
+
